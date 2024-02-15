@@ -4,11 +4,9 @@ int main(){
     int n;
     cout<<"Enter number : ";
     cin>>n;
-    int s=0;
-    while(n>0){
-        int p=n%10;
-        n=n/10;
-        s=s+p;
+    int f=1;
+    for(int i=n;i>0;i--){
+        f=f*i;
     }
-    cout<<s;
+    cout<<f;
 }
